@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Le langage html &#8212; NSI</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=a6621bbe" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=72dce1d2"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../_static/translations.js?v=bf059b8c"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/activite_web_html';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Feuille de style CSS" href="activite_web_css.html" />
+    <link rel="prev" title="Langage HTML, CSS et JAVASCRIPT" href="../index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Passer au contenu principal</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Haut de page
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">NSI</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Recherche</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Le langage html</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activite_web_css.html">Feuille de style CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activite_web_js.html">Les événements en JAVASCRIPT</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/activite_web_html.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Le langage html</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="le-langage-html">
+<h1>Le langage html<a class="headerlink" href="#le-langage-html" title="Lien vers cette rubrique">#</a></h1>
+<p>Le document ci-dessous est une image représentant une page Web. Son apparence ne laisse rien apparaître du
+langage utilisé. Ce langage est le <code class="docutils literal notranslate"><span class="pre">HTML</span></code> acronyme de <code class="docutils literal notranslate"><span class="pre">HyperTexte</span> <span class="pre">Markup</span> <span class="pre">Language</span></code> qui signifie « Langage de Balisage Hypertexte ».</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/langage_html.png"><img alt="image" src="../_images/langage_html.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Page en langage html</span><a class="headerlink" href="#id1" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<ol class="arabic">
+<li><p>Une page web est structurée selon les éléments qu’elle contient. Identifier sur l’image ci-dessus 5 éléments structurel contenu dans la page web.</p></li>
+<li><p>Un texte peut également contenir des mises en forme permettant de mettre en évidence des mots du texte. Citer différents mises en forme applicable à des mots d’un texte.</p></li>
+<li><p>Une page web est écrite en langage <strong>html</strong>. Ce langage utilise des <strong>balises</strong> pour structurer les contenus d’un texte. Le tableau ci-après donne les principales balises du langage html pour structurer un texte.</p>
+<table class="table">
+<colgroup>
+<col style="width: 22.2%" />
+<col style="width: 33.3%" />
+<col style="width: 44.4%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Structure</p></th>
+<th class="head"><p>Balises</p></th>
+<th class="head"><p>Attributs</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>titre niveau 1</p></td>
+<td><p>&lt;h1&gt;…&lt;/h1&gt;</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>titre niveau 2</p></td>
+<td><p>&lt;h2&gt;…&lt;/h2&gt;</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>titre niveau 3</p></td>
+<td><p>&lt;h3&gt;…&lt;/h3&gt;</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>titre niveau 4</p></td>
+<td><p>&lt;h4&gt;…&lt;/h4&gt;</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>titre niveau 5</p></td>
+<td><p>&lt;h5&gt;…&lt;/h5&gt;</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>titre niveau 6</p></td>
+<td><p>&lt;h6&gt;…&lt;/h6&gt;</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>paragraphe</p></td>
+<td><p>&lt;p&gt;…&lt;/p&gt;</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>italique</p></td>
+<td><p>&lt;i&gt;…&lt;/i&gt;</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>gras</p></td>
+<td><p>&lt;b&gt;…&lt;/b&gt;</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>emphase</p></td>
+<td><p>&lt;em&gt;…&lt;/em&gt;</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>image</p></td>
+<td><p>&lt;img /&gt;</p></td>
+<td><p>src=&quot;lien vers fichier image&quot; width=&quot;largeur image en px&quot;</p></td>
+</tr>
+<tr class="row-odd"><td><p>lien hypertexte</p></td>
+<td><p>&lt;a&gt;…&lt;/a&gt;</p></td>
+<td><p>href=&quot;lien vers contenu&quot; title=&quot;texte associé au lien&quot; alt=&quot;texte alternatif&quot;</p></td>
+</tr>
+<tr class="row-even"><td><p>liste numérotée</p></td>
+<td><p>&lt;ol&gt; items de liste &lt;/ol&gt;</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>liste à puces</p></td>
+<td><p>&lt;ul&gt; items de liste &lt;/ul&gt;</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>item de liste</p></td>
+<td><p>&lt;li&gt;contenu&lt;/li&gt;</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Identifier les balises html aux différents éléments structurels et de mise en forme d’un texte.</p>
+</li>
+<li><p>Le contenu de la page web est dans un fichier texte, disponible sur l’ENT et visible sur la figure suivante.</p>
+<img alt="image" src="../_images/langage_html_txt.png" />
+<ol class="loweralpha simple">
+<li><p>Ouvrir ce fichier avec l’éditeur notepad++ et ajouter les balises html pour structurer le contenu.</p></li>
+<li><p>Sauvegarder votre fichier avec une extension <code class="docutils literal notranslate"><span class="pre">html</span></code> et l’ouvrir avec un navigateur.</p></li>
+</ol>
+</li>
+<li><p>Afficher votre page html et activer les outils de développement (F12) et sélectionner l’onglet <strong>inspecteur</strong> (vous pouvez aussi faire un clic droit de souris et sélectionner « inspecter »).</p>
+<p>Vérifier la présence des balises que vous avez ajouter à votre fichier.</p>
+</li>
+<li><p>Ajouter les liens hypertextes suivants:</p>
+<ol class="loweralpha simple">
+<li><p>Un lien vers la page <a class="reference external" href="https://fr.wikipedia.org/wiki/World_Wide_Web">wikipedia du mot WEB</a> dans le paragraphe introduction.</p></li>
+<li><p>Un lien vers la page <a class="reference external" href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language">wikipedia du mot HTML</a> dans le paragraphe langage HTML.</p></li>
+</ol>
+</li>
+<li><p>L’affichage des balises <code class="docutils literal notranslate"><span class="pre">&lt;balise&gt;</span></code> et <code class="docutils literal notranslate"><span class="pre">&lt;/balise&gt;</span></code> n’est pas correct. Cela s’explique par le fait que le navigateur essaie d’interpréter ces balises comme de vraies balises html sans y parvenir. Pour afficher des caractères spéciaux, appelés <strong>entités html</strong>, il faut utiliser un encodage propre au html.</p>
+<p>Le site de <a class="reference external" href="https://developer.mozilla.org/fr/docs/Glossary/Entity">mozilla</a> vous guide pour afficher correctement les balises html dans votre document.</p>
+</li>
+<li><p>Une page web se décompose en 2 parties:</p>
+<ul class="simple">
+<li><p>Une partie non affichée qui contient des informations sur la page web utiles au navigateur pour afficher correctement la page. Cette partie est l’entête du document html balisée par <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;...&lt;/head&gt;</span></code></p></li>
+<li><p>Une partie affichée par le navigateur qui contient le contenu du document. C’est le coprs du document html balisé par <code class="docutils literal notranslate"><span class="pre">&lt;body&gt;...&lt;/body&gt;</span></code>.</p></li>
+</ul>
+<ol class="loweralpha simple">
+<li><p>Ajouter dans votre fichier html les balises de l’entête et du corps du document.</p></li>
+<li><p>Quel est le titre de l’onglet de votre document html affiché par le navigateur ?</p></li>
+<li><p>Pour afficher un titre sur l’onglet, on ajoute la balise <code class="docutils literal notranslate"><span class="pre">&lt;title&gt;...&lt;/title&gt;</span></code>. Ajouter le titre <em>Première page web</em> pour qu’il apparaisse sur l’onglet.</p></li>
+</ol>
+<p>d. Les balises <code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">/&gt;</span></code> sont des balises vides qui informent le navigateur sur le document à afficher. Elle est accompagnée d’un attribut qui contient les informations à transmettre au navigateur.
+Par exemple l’attribut <code class="docutils literal notranslate"><span class="pre">charset</span></code> indique l’encodage de caractères à utiliser.</p>
+<blockquote>
+<div><p>Ajouter à votre fichier une balise <code class="docutils literal notranslate"><span class="pre">meta</span></code> indiquant l’encodage <code class="docutils literal notranslate"><span class="pre">utf-8</span></code> utilisé.</p>
+</div></blockquote>
+<ol class="loweralpha simple" start="4">
+<li><p>Modifier l’encodage par <code class="docutils literal notranslate"><span class="pre">iso-8859-1</span></code> et actualiser votre page web. La page web s’affiche-t-elle correctement ?</p></li>
+</ol>
+</li>
+</ol>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../index.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Langage HTML, CSS et JAVASCRIPT</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="activite_web_css.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Feuille de style CSS</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Yannick Chistel
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023,Yannick Chistel.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

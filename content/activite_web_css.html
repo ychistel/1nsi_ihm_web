@@ -1,0 +1,504 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Feuille de style CSS &#8212; NSI</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=a6621bbe" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=72dce1d2"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../_static/translations.js?v=bf059b8c"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/activite_web_css';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Les événements en JAVASCRIPT" href="activite_web_js.html" />
+    <link rel="prev" title="Le langage html" href="activite_web_html.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Passer au contenu principal</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Haut de page
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">NSI</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Recherche</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="activite_web_html.html">Le langage html</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Feuille de style CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activite_web_js.html">Les événements en JAVASCRIPT</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/activite_web_css.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Feuille de style CSS</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="feuille-de-style-css">
+<h1>Feuille de style CSS<a class="headerlink" href="#feuille-de-style-css" title="Lien vers cette rubrique">#</a></h1>
+<p>L’image ci-dessous est notre premier document web écrit en langage html.
+Nous n’avons pas encore obtenu le résultat final attendu.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/style_css.png"><img alt="image" src="../_images/style_css.png" style="width: 100%;" />
+</a>
+</figure>
+<p>Les améliorations à apporter ne relèvent pas du langage html mais des règles de style en CSS (Cascading Style Sheet) qui améliorent l’affichage graphique du document html.</p>
+<p>Les règles de style CSS sont définies dans l’entête du document dans la balise <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;&lt;/head&gt;</span></code>. Toutes les règles CSS seront comprises entre les balises <code class="docutils literal notranslate"><span class="pre">&lt;style&gt;</span></code> et <code class="docutils literal notranslate"><span class="pre">&lt;/style&gt;</span></code>. Cette balise doit contenir l’attribut <code class="docutils literal notranslate"><span class="pre">type</span></code> qui a pour valeur <code class="docutils literal notranslate"><span class="pre">text/css</span></code>.</p>
+<p>Chaque règle CSS est définie sur une balise html appelée <strong>sélecteur</strong>. Le <strong>sélecteur</strong> contient des propriétés auxquelles on associe des valeurs. Une règle CSS s’écrit toujours avec la même syntaxe:</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Règle en CSS</span><a class="headerlink" href="#id1" title="Lien vers ce code">#</a></div>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">selecteur</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="err">propriété</span><span class="w"> </span><span class="err">1:</span><span class="w"> </span><span class="err">valeur</span><span class="w"> </span><span class="err">1</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="err">propriété</span><span class="w"> </span><span class="err">2:</span><span class="w"> </span><span class="err">valeur</span><span class="w"> </span><span class="err">2</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<p>Nous allons compléter notre document html pour appliquer les règles CSS qui vont nous permettre d’obtenir l’affichage souhaité.</p>
+<ol class="arabic">
+<li><p>Ajouter la balise <code class="docutils literal notranslate"><span class="pre">&lt;style&gt;&lt;/style&gt;</span></code> dans votre document html.</p></li>
+<li><p>Pour limiter la largeur de la page web et que celle-ci soit centrée, il faut ajouter les propriétés CSS suivantes
+sur le sélecteur <code class="docutils literal notranslate"><span class="pre">body</span></code>.</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">body</span><span class="p">{</span>
+<span class="w">   </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">Verdana</span><span class="p">,</span><span class="kc">sans-serif</span><span class="p">;</span>
+<span class="w">   </span><span class="k">font-size</span><span class="p">:</span><span class="mi">1</span><span class="kt">em</span><span class="p">;</span>
+<span class="w">   </span><span class="k">line-height</span><span class="p">:</span><span class="mf">1.5</span><span class="kt">em</span><span class="p">;</span>
+<span class="w">   </span><span class="k">width</span><span class="p">:</span><span class="mi">1080</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">   </span><span class="k">margin</span><span class="p">:</span><span class="kc">auto</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>Le titre de la page « Fonctionnement du web » doit être centré et avoir une taille plus importante.</p>
+<p>Ajouter le sélecteur associé au titre de niveau 1, puis la propriété <code class="docutils literal notranslate"><span class="pre">text-align</span></code> qui a pour valeur <code class="docutils literal notranslate"><span class="pre">center</span></code> et
+la propriété <code class="docutils literal notranslate"><span class="pre">font-size</span></code> qui a pour valeur <code class="docutils literal notranslate"><span class="pre">3em</span></code>.</p>
+</li>
+<li><p>Les titres de niveau 2 ont une couleur bleue. La propriété CSS appropriée à la couleur est <code class="docutils literal notranslate"><span class="pre">color</span></code>. Les couleurs
+peuvent avoir plusieurs écritures.</p>
+<ul class="simple">
+<li><p>le nom de la couleur en anglais,</p></li>
+<li><p>le code couleur RGB en hexadécimal précédé du signe #,</p></li>
+<li><p>le code couleur RGB en décimal écrit entre parenthèses et précédé par rgb.</p></li>
+</ul>
+<ol class="loweralpha simple">
+<li><p>Quelles sont les trois écritures possibles pour la couleur « bleu royal » ?</p></li>
+<li><p>Ajouter cette propriété CSS à votre document sous les trois formes d’écritures.</p></li>
+<li><p>Afficher les outils de développement du navigateur (F12) et inspecter l’un des titres de couleur bleue. Vérifier que la
+couleur ne change pas en activant ou désactivant les valeurs.</p></li>
+</ol>
+</li>
+<li><p>Pour centrer une image sur une page, on applique les règles CSS sur le sélecteur <code class="docutils literal notranslate"><span class="pre">img</span></code> suivantes:</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">img</span><span class="p">{</span>
+<span class="w">   </span><span class="k">display</span><span class="p">:</span><span class="kc">block</span><span class="p">;</span>
+<span class="w">   </span><span class="k">margin</span><span class="p">:</span><span class="mi">16</span><span class="kt">px</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Ajouter cette règle pour centrer les images dans le document.</p>
+</li>
+<li><p>La photo de toile d’araignée est encadrée avec un effet ombré. Pour obtenir cet effet, on applique les propriétés
+CSS suivantes:</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="nt">border</span><span class="p">:</span><span class="nd">solid</span><span class="w"> </span><span class="nt">1px</span><span class="w"> </span><span class="p">#</span><span class="nn">eee</span><span class="o">;</span>
+<span class="nt">box-shadow</span><span class="p">:</span><span class="nd">4px</span><span class="w"> </span><span class="nt">4px</span><span class="w"> </span><span class="p">#</span><span class="nn">aaa</span><span class="o">;</span>
+<span class="nt">padding</span><span class="p">:</span><span class="nd">8px</span><span class="o">;</span>
+</pre></div>
+</div>
+<ol class="loweralpha">
+<li><p>Appliquer ces règles au sélecteur img. Que remarque-t-on ?</p></li>
+<li><p>Pour éviter que des propriétés s’appliquent à tous les sélecteurs, on ajoute des classes aux sélecteurs. Il faut:</p>
+<ul class="simple">
+<li><p>choisir un nom de classe qui regroupe les propriétés CSS,</p></li>
+<li><p>ajouter au document html la classe dans le sélecteur où elle s’applique avec la syntaxe: <code class="docutils literal notranslate"><span class="pre">class=&quot;nom</span> <span class="pre">de</span> <span class="pre">la</span>
+<span class="pre">classe&quot;</span></code> (pas de « e » à class),</p></li>
+<li><p>ajouter dans la balise style la classe précédée d’un point avec toutes ces propriétés CSS.</p></li>
+</ul>
+<p>Ajouter la classe cadre avec les propriétés CSS créant un cadre à la photo de toile d’araignée.</p>
+</li>
+</ol>
+</li>
+<li><p>Les styles CSS créés pour notre document ne sont applicables qu’à notre document. Si on souhaite appliquer les mêmes
+styles dans un autre document html, il faudra ajouter ces styles.</p>
+<p>C’est possible mais en cas de modification, il faudra modifier tous les documents html ce qui n’est pas optimal.</p>
+<p>Pour éviter cela, on peut rassembler les propriétés CSS dans un fichier externe. Ce fichier est appelé « feuille de
+style CSS » et son extension est <code class="docutils literal notranslate"><span class="pre">.css</span></code>.</p>
+<ol class="loweralpha">
+<li><p>Créer une feuille de style CSS qui comprend toutes les propriétés CSS de notre document et enregistrer cette
+feuille sous le nom <code class="docutils literal notranslate"><span class="pre">mon_style.css</span></code>.</p></li>
+<li><p>Remplacer dans votre document html, la balise style par la balise vide suivante:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">link</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;mon_style.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="p">/&gt;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</li>
+<li><p>Ajouter un lien vers une feuille de style permet de créer des liens vers des feuilles de style se trouvant sur le web.</p>
+<p>Un usage possible est l’application d’une police de style proposée par google.</p>
+<ol class="loweralpha simple">
+<li><p>Rendez vous sur le site des <a class="reference external" href="https://fonts.google.com/">font google</a>,</p></li>
+<li><p>Choisissez une police et copiez le lien de la feuille de style dans votre document.</p></li>
+<li><p>Ajouter dans le sélecteur body la propriété CSS font-family associée.</p></li>
+<li><p>Vérifiez que la police est bien appliquée à votre document html.</p></li>
+</ol>
+</li>
+<li><p>Lorsque les propriétés CSS ont été appliquées, votre document doit ressembler à la capture suivante.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/activite_html.png"><img alt="image" src="../_images/activite_html.png" style="width: 100%;" />
+</a>
+</figure>
+</li>
+</ol>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="activite_web_html.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Le langage html</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="activite_web_js.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Les événements en JAVASCRIPT</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Yannick Chistel
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023,Yannick Chistel.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
