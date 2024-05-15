@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Les événements en JAVASCRIPT &#8212; NSI</title>
+    <title>Exercices &#8212; &lt;a href=&#34;https://ychistel.github.io/cours/&#34;&gt;NSI&lt;/a&gt;</title>
   
   
   
@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=a6621bbe" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fa2fe99f" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
@@ -43,10 +43,10 @@
     <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script src="../_static/translations.js?v=bf059b8c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/activite_web_js';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/exercice_3';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="prev" title="Feuille de style CSS" href="activite_web_css.html" />
+    <link rel="prev" title="Les événements en JAVASCRIPT" href="cours_js.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="fr"/>
   </head>
@@ -131,7 +131,7 @@
   
   
   
-    <p class="title logo__title">NSI</p>
+    <p class="title logo__title"><a href="https://ychistel.github.io/cours/">NSI</a></p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -147,10 +147,20 @@
  </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="activite_web_html.html">Le langage html</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activite_web_css.html">Feuille de style CSS</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Les événements en JAVASCRIPT</a></li>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Langage HTML</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="cours_html.html">Le langage html</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercice_1.html">Exercices</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Feuille de style</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="cours_css.html">Les styles en CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercice_2.html">Exercices</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interactivité</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="cours_js.html">Les événements en JAVASCRIPT</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Exercices</a></li>
 </ul>
 
     </div>
@@ -205,7 +215,7 @@
       
       
       
-      <li><a href="../_sources/content/activite_web_js.rst" target="_blank"
+      <li><a href="../_sources/content/exercice_3.rst" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Télécharger le fichier source"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -289,7 +299,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Les événements en JAVASCRIPT</h1>
+    <h1>Exercices</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -299,9 +309,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-au-javascript">Introduction au JAVASCRIPT</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-des-evenements-en-javascript">Gestion des événements en JAVASCRIPT</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agir-sur-le-contenu-du-document">Agir sur le contenu du document</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-9">Exercice 9</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-10">Exercice 10</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-11">Exercice 11</a></li>
 </ul>
             </nav>
         </div>
@@ -313,38 +323,13 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="les-evenements-en-javascript">
-<h1>Les événements en JAVASCRIPT<a class="headerlink" href="#les-evenements-en-javascript" title="Lien vers cette rubrique">#</a></h1>
-<p>Une page WEB s’affiche sur le navigateur d’une machine cliente. On rappelle que l’affichage de cette page WEB fait
-suite à une requêtre HTTP de la machine cliente vers le serveur qui dispose de la page WEB.</p>
-<p>Le serveur répond à la requête HTTP en renvoyant la page WEB demandée au format HTML et avec un code d’état égal à 200
-et un statut OK.</p>
-<p>La page WEB est au format HTML, contient des propriétés CSS pour l’affichage et aussi (éventuellement) des scripts en
-langage « JAVASCRIPT ».</p>
-<figure class="align-center">
-<img alt="image" src="../_images/requete_http.png" />
-</figure>
-<p>Un script JAVASCRIPT chargé avec la page web est un programme exécuté par le navigateur du client qui permet d’agir sur
-la page WEB affichée.</p>
-<p>Un script JAVASCRIPT peut:</p>
-<ul class="simple">
-<li><p>modifier le contenu de la page et les balises HTML.</p></li>
-<li><p>modifier l’affichage en ajoutant ou modifiant les propriétés CSS,</p></li>
-<li><p>interagir avec l’utilisateur avec les événements JAVASCRIPT.</p></li>
-</ul>
-<p>Lorsqu’un script est chargé dans une fenêtre ou un onglet du navigateur, celui-ci s’exécute dans la fenêtre ou l’onglet
-qui l’a chargé.</p>
-<p>Nous allons à travers quelques exemples voir et appliquer quelques scripts sur une page web. On reprendra la page WEB
-créée après les 2 activités précédentes sur les langages HTML et CSS.</p>
-<section id="introduction-au-javascript">
-<h2>Introduction au JAVASCRIPT<a class="headerlink" href="#introduction-au-javascript" title="Lien vers cette rubrique">#</a></h2>
-<p>Un script JAVASCRIPT peut être chargé n’importe où dans la page HTML.
-Néanmoins, il est préférable de l’ajouter soit entre les balises <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code> et <code class="docutils literal notranslate"><span class="pre">&lt;/head&gt;</span></code> soit en fin de document
-juste avant la balise <code class="docutils literal notranslate"><span class="pre">&lt;/html&gt;</span></code> ou la balise <code class="docutils literal notranslate"><span class="pre">&lt;/body&gt;</span></code>.</p>
+  <section id="exercices">
+<h1>Exercices<a class="headerlink" href="#exercices" title="Lien vers cette rubrique">#</a></h1>
+<section id="section-9">
+<h2>Exercice 9<a class="headerlink" href="#section-9" title="Lien vers cette rubrique">#</a></h2>
+<p><em>On reprend le document web créé dans les 2 parties précédentes</em></p>
 <ol class="arabic">
-<li><p>Un script JAVASCRIPT est toujours placé entre les balises <code class="docutils literal notranslate"><span class="pre">&lt;script</span> <span class="pre">type=&quot;text/javascript&quot;&gt;</span></code> et <code class="docutils literal notranslate"><span class="pre">&lt;/script&gt;</span></code>.</p>
-<p>Ajouter ces deux balises entre les  <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code> et <code class="docutils literal notranslate"><span class="pre">&lt;/head&gt;</span></code> de votre document HTML.</p>
-</li>
+<li><p>Ajouter les deux balises pour créer un script <code class="docutils literal notranslate"><span class="pre">JAVASCRIPT</span></code> entre les  <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code> et <code class="docutils literal notranslate"><span class="pre">&lt;/head&gt;</span></code> de votre document HTML.</p></li>
 <li><p>On donne un premier script JAVASCRIPT:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;mon premier script&#39;</span><span class="p">);</span>
 </pre></div>
@@ -377,9 +362,9 @@ juste avant la balise <code class="docutils literal notranslate"><span class="pr
 <ol class="loweralpha" start="3">
 <li><p>Compléter le script avec une troisième ligne de code pour afficher le nom en console.</p></li>
 <li><p>On peut améliorer l’affichage en concaténant la variable <code class="docutils literal notranslate"><span class="pre">nom</span></code> et un texte grâce au signe d’addition.</p>
-<p>Ajouter le texte « Votre nom est «  pour obtenir l’affichage d’alerte ci-dessous.</p>
+<p>Ajouter le texte <a href="#id1"><span class="problematic" id="id2">``</span></a>Votre nom est `` pour obtenir l’affichage d’alerte ci-dessous.</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/alert_nom.png"><img alt="image" src="../_images/alert_nom.png" style="width: 400px;" />
+<a class="border-style-solid border-width-1 border-color-gray reference internal image-reference" href="../_images/alert_nom.png"><img alt="image" class="border-style-solid border-width-1 border-color-gray" src="../_images/alert_nom.png" style="width: 400px;" />
 </a>
 </figure>
 </li>
@@ -387,18 +372,9 @@ juste avant la balise <code class="docutils literal notranslate"><span class="pr
 </li>
 </ol>
 </section>
-<section id="gestion-des-evenements-en-javascript">
-<h2>Gestion des événements en JAVASCRIPT<a class="headerlink" href="#gestion-des-evenements-en-javascript" title="Lien vers cette rubrique">#</a></h2>
-<p>Le langage JAVASCRIPT permet la gestion des événements. Il est à l’écoute des interactions de la personne avec la page WEB.</p>
-<p>Les événements les plus courants sont:</p>
-<ul class="simple">
-<li><p>Le clic de la souris,</p></li>
-<li><p>le double-clic de la souris,</p></li>
-<li><p>le survol par la souris d’une partie de l’écran, d’un mot, d’une image, etc</p></li>
-<li><p>le focus ou la perte de focus d’un élément de la page,</p></li>
-<li><p>le chargement complet de la page,</p></li>
-<li><p>la fermeture de la fenêtre.</p></li>
-</ul>
+<section id="section-10">
+<h2>Exercice 10<a class="headerlink" href="#section-10" title="Lien vers cette rubrique">#</a></h2>
+<p><em>On reprend le document web créé dans les 2 parties précédentes</em></p>
 <ol class="arabic">
 <li><p>On peut utiliser des scripts javascript placés dans un fichier externe. Dans ce cas, on ajoute dans la balise <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;...&lt;/head&gt;</span></code> la balise suivante.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;script.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
@@ -426,12 +402,12 @@ juste avant la balise <code class="docutils literal notranslate"><span class="pr
 </ol>
 </li>
 <li><p>En HTML, on peut ajouter des boutons qui permettent de créer de l’interactivité. Pour ajouter un bouton, il faut appliquer la syntaxe suivante:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nx">button</span><span class="o">&gt;</span><span class="nx">Texte</span><span class="w"> </span><span class="nx">sur</span><span class="w"> </span><span class="nx">le</span><span class="w"> </span><span class="nx">bouton</span><span class="o">&lt;</span><span class="err">/button&gt;</span>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span>Texte sur le bouton<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 <ol class="loweralpha simple">
 <li><p>Ajouter dans votre document HTML un bouton avec l’identifiant <code class="docutils literal notranslate"><span class="pre">btn</span></code> et contenant le texte « Cliquer ».</p></li>
-<li><p>Ajouter l’événement <code class="docutils literal notranslate"><span class="pre">onclick</span></code> sur le bouton en associant une instruction d’alerte qui affiche le message « Tu as cliqué sur le bouton ! ».</p></li>
+<li><p>Ajouter l’événement <code class="docutils literal notranslate"><span class="pre">onClick</span></code> sur le bouton en associant une instruction d’alerte qui affiche le message « Tu as cliqué sur le bouton ! ».</p></li>
 </ol>
 </li>
 <li><p>Ouvrir avec l’éditeur notepad++ le fichier <code class="docutils literal notranslate"><span class="pre">script.js</span></code>. Ce fichier contient des fonctions écrites en javascript qui vont nous servir de modèle.</p>
@@ -442,9 +418,10 @@ juste avant la balise <code class="docutils literal notranslate"><span class="pr
 </li>
 </ol>
 </section>
-<section id="agir-sur-le-contenu-du-document">
-<h2>Agir sur le contenu du document<a class="headerlink" href="#agir-sur-le-contenu-du-document" title="Lien vers cette rubrique">#</a></h2>
-<p>Le langage javascript permet de modifier le contenu d’une page web. Nous allons écrire un script qui ajoute un message dans le document HTML.</p>
+<section id="section-11">
+<h2>Exercice 11<a class="headerlink" href="#section-11" title="Lien vers cette rubrique">#</a></h2>
+<p><em>On reprend le document web créé dans les 2 parties précédentes</em></p>
+<p>Nous allons écrire un script qui ajoute un message dans le document HTML.</p>
 <ol class="arabic">
 <li><p>Dans la page web, ajouter sous le bouton la balise <code class="docutils literal notranslate"><span class="pre">&lt;p</span> <span class="pre">id</span> <span class="pre">=&quot;message&quot;&gt;&lt;\p&gt;</span></code>. Actualiser la page web sur votre navigateur et vérifier que rien n’apparait puisque la balise est vide.</p></li>
 <li><p>En javascript, on peut accéder à une balise de la page html grâce à son identifiant. L’instruction est la suivante:</p>
@@ -477,12 +454,12 @@ juste avant la balise <code class="docutils literal notranslate"><span class="pr
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="activite_web_css.html"
+       href="cours_js.html"
        title="page précédente">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">précédent</p>
-        <p class="prev-next-title">Feuille de style CSS</p>
+        <p class="prev-next-title">Les événements en JAVASCRIPT</p>
       </div>
     </a>
 </div>
@@ -501,9 +478,9 @@ juste avant la balise <code class="docutils literal notranslate"><span class="pr
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-au-javascript">Introduction au JAVASCRIPT</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-des-evenements-en-javascript">Gestion des événements en JAVASCRIPT</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agir-sur-le-contenu-du-document">Agir sur le contenu du document</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-9">Exercice 9</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-10">Exercice 10</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-11">Exercice 11</a></li>
 </ul>
   </nav></div>
 

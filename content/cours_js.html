@@ -1,0 +1,613 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Les événements en JAVASCRIPT &#8212; &lt;a href=&#34;https://ychistel.github.io/cours/&#34;&gt;NSI&lt;/a&gt;</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fa2fe99f" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=72dce1d2"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../_static/translations.js?v=bf059b8c"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/cours_js';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Exercices" href="exercice_3.html" />
+    <link rel="prev" title="Exercices" href="exercice_2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Passer au contenu principal</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Haut de page
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title"><a href="https://ychistel.github.io/cours/">NSI</a></p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Recherche</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Langage HTML</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="cours_html.html">Le langage html</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercice_1.html">Exercices</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Feuille de style</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="cours_css.html">Les styles en CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercice_2.html">Exercices</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interactivité</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Les événements en JAVASCRIPT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercice_3.html">Exercices</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/cours_js.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Les événements en JAVASCRIPT</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-au-javascript">Introduction au JAVASCRIPT</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-des-evenements-en-javascript">Gestion des événements en JAVASCRIPT</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agir-sur-le-contenu-du-document">Agir sur le contenu du document</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="les-evenements-en-javascript">
+<h1>Les événements en JAVASCRIPT<a class="headerlink" href="#les-evenements-en-javascript" title="Lien vers cette rubrique">#</a></h1>
+<p>Une page WEB s’affiche sur le navigateur d’une machine cliente. On rappelle que l’affichage de cette page WEB fait suite à une requêtre HTTP de la machine cliente vers le serveur qui dispose de la page WEB.</p>
+<p>Le serveur répond à la requête HTTP en renvoyant la page WEB demandée au format HTML et avec un code d’état égal à 200 et un statut OK.</p>
+<p>La page WEB est au format HTML, contient des propriétés CSS pour l’affichage et aussi (éventuellement) des scripts en langage <code class="docutils literal notranslate"><span class="pre">JAVASCRIPT</span></code>.</p>
+<figure class="align-center">
+<img alt="image" src="../_images/requete_http.png" />
+</figure>
+<p>Un script <code class="docutils literal notranslate"><span class="pre">JAVASCRIPT</span></code> chargé avec la page web est un programme exécuté par le navigateur du client qui permet d’agir sur la page WEB affichée.</p>
+<p>Un script JAVASCRIPT peut:</p>
+<ul class="simple">
+<li><p>modifier le contenu de la page et ses balises HTML.</p></li>
+<li><p>modifier l’affichage en ajoutant ou en modifiant les propriétés CSS,</p></li>
+<li><p>interagir avec l’utilisateur avec les <strong>événements</strong> JAVASCRIPT.</p></li>
+</ul>
+<p>Lorsqu’un script est chargé dans une fenêtre ou un onglet du navigateur, celui-ci s’exécute dans la fenêtre ou l’onglet qui l’a chargé.</p>
+<section id="introduction-au-javascript">
+<h2>Introduction au JAVASCRIPT<a class="headerlink" href="#introduction-au-javascript" title="Lien vers cette rubrique">#</a></h2>
+<p>Un script JAVASCRIPT peut être placé n’importe où dans la page HTML. Néanmoins, il est préférable de l’ajouter :</p>
+<ul class="simple">
+<li><p>soit dans l’entête du document HTML entre les balises <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code> et <code class="docutils literal notranslate"><span class="pre">&lt;/head&gt;</span></code>,</p></li>
+<li><p>soit à la fin du document juste avant la balise <code class="docutils literal notranslate"><span class="pre">&lt;/html&gt;</span></code> ou la balise <code class="docutils literal notranslate"><span class="pre">&lt;/body&gt;</span></code>.</p></li>
+</ul>
+<p>Un script <code class="docutils literal notranslate"><span class="pre">JAVASCRIPT</span></code> est toujours placé entre les balises <code class="docutils literal notranslate"><span class="pre">&lt;script</span> <span class="pre">type=&quot;text/javascript&quot;&gt;</span></code> et <code class="docutils literal notranslate"><span class="pre">&lt;/script&gt;</span></code>. La structure du document HTML devient:</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Script javascript dans un document HTML</span><a class="headerlink" href="#id1" title="Lien vers ce code">#</a></div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!doctype&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;mon_style.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">...</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+        ...
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        ...
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="gestion-des-evenements-en-javascript">
+<h2>Gestion des événements en JAVASCRIPT<a class="headerlink" href="#gestion-des-evenements-en-javascript" title="Lien vers cette rubrique">#</a></h2>
+<p>Le langage JAVASCRIPT permet la gestion des événements. Il est à l’écoute des interactions de la personne avec la page WEB. Voici quelques événements en <code class="docutils literal notranslate"><span class="pre">JAVASCRIPT</span></code>:</p>
+<ul class="simple">
+<li><p>Le clic de la souris : <code class="docutils literal notranslate"><span class="pre">onClick</span></code>,</p></li>
+<li><p>le survol par la souris d’une partie de l’écran, d’un mot, d’une image, etc : <code class="docutils literal notranslate"><span class="pre">onMouseover</span></code>,</p></li>
+<li><p>le chargement complet de la page : <code class="docutils literal notranslate"><span class="pre">onload</span></code>,</p></li>
+</ul>
+<p>La gestion d’un événement en <code class="docutils literal notranslate"><span class="pre">JAVASCRIPT</span></code> se déroule en 2 étapes:</p>
+<ol class="arabic simple">
+<li><p>On crée un script ou une fonction en javascript qui agit sur la page WEB affichée,</p></li>
+<li><p>On ajoute un déclencheur de cette action en plaçant dans une balise HTML l’événement JAVASCRIPT.</p></li>
+</ol>
+<p>Par exemple, une page WEB permet de changer la couleur du titre principal lorsqu’on clique dessus. On écrit une fonction <code class="docutils literal notranslate"><span class="pre">colore</span></code> qui change la couleur du titre puis dans dans la balise <code class="docutils literal notranslate"><span class="pre">h1</span></code> on ajoute le déclencheur de l’événement <code class="docutils literal notranslate"><span class="pre">onClick=&quot;colore()&quot;</span></code>. On obtient le code suivant:</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Événement en javascript</span><a class="headerlink" href="#id2" title="Lien vers ce code">#</a></div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!doctype&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="kd">function</span><span class="w"> </span><span class="nx">colore</span><span class="p">(){</span>
+<span class="w">                </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;titre&#39;</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;red&#39;</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+        ...
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;titre&quot;</span> <span class="na">onClick</span><span class="o">=</span><span class="s">&quot;colore()&quot;</span><span class="p">&gt;</span>Changer la couleur du titre<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>La gestion d&#39;un événement javascript...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="demo"><!doctype>
+<html>
+    <head>
+        <script type="text/javascript">
+            function colore(){
+                document.getElementById('titre').style.color = 'red';
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="titre" onClick="colore()">Changer la couleur du titre</h1>
+        <p>La gestion d'un événement javascript...</p>
+    </body>
+</html></div></section>
+<section id="agir-sur-le-contenu-du-document">
+<h2>Agir sur le contenu du document<a class="headerlink" href="#agir-sur-le-contenu-du-document" title="Lien vers cette rubrique">#</a></h2>
+<p>Le langage javascript permet de modifier le contenu d’une page web. Pour cela, il faut utiliser des identifiants pour les balises HTML. Chaque identifiant est unique dans le document WEB. Cela permet aux scripts <code class="docutils literal notranslate"><span class="pre">JAVASCRIPT</span></code> d’agir sur le document sans risque de conflit.</p>
+<p>On peut agir sur un document de différentes manières. Par exemple,</p>
+<ul class="simple">
+<li><p>En modifiant son apparence  (comme vu précédemment),</p></li>
+<li><p>En modifiant le contenu du document,</p></li>
+<li><p>En ajoutant du contenu à un document.</p></li>
+</ul>
+<p>Prenons l’exemple d’un document qui ajoute la date du jour et l’heure. En voici le code:</p>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">Afficher la date et l’heure en javascript</span><a class="headerlink" href="#id3" title="Lien vers ce code">#</a></div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Afficher la Date et l&#39;Heure<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">#</span><span class="nn">datetime</span><span class="p">{</span>
+<span class="w">            </span><span class="k">text-align</span><span class="p">:</span><span class="kc">center</span><span class="p">;</span>
+<span class="w">            </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">em</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="kd">function</span><span class="w"> </span><span class="nx">updateDateTime</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">var</span><span class="w"> </span><span class="nx">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<span class="w">            </span><span class="kd">var</span><span class="w"> </span><span class="nx">optionsDate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;numeric&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">month</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;long&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">day</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;numeric&#39;</span><span class="w"> </span><span class="p">};</span>
+<span class="w">            </span><span class="kd">var</span><span class="w"> </span><span class="nx">optionsTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">hour</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;2-digit&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">minute</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;2-digit&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">second</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;2-digit&#39;</span><span class="w"> </span><span class="p">};</span>
+<span class="w">            </span><span class="kd">var</span><span class="w"> </span><span class="nx">dateStr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">now</span><span class="p">.</span><span class="nx">toLocaleDateString</span><span class="p">(</span><span class="s1">&#39;fr-FR&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">optionsDate</span><span class="p">);</span>
+<span class="w">            </span><span class="kd">var</span><span class="w"> </span><span class="nx">timeStr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">now</span><span class="p">.</span><span class="nx">toLocaleTimeString</span><span class="p">(</span><span class="s1">&#39;fr-FR&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">optionsTime</span><span class="p">);</span>
+<span class="w">            </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;datetime&#39;</span><span class="p">).</span><span class="nx">innerText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">dateStr</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">timeStr</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// Mettre à jour l&#39;heure chaque seconde</span>
+<span class="w">        </span><span class="nx">setInterval</span><span class="p">(</span><span class="nx">updateDateTime</span><span class="p">,</span><span class="w"> </span><span class="mf">1000</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Appeler immédiatement la fonction pour afficher la date et l&#39;heure sans attendre 1 seconde</span>
+<span class="w">        </span><span class="nx">updateDateTime</span><span class="p">();</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>La date et l&#39;heure du jour<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;datetime&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ol class="arabic simple">
+<li><p>Le document HTML contient une balise <code class="docutils literal notranslate"><span class="pre">div</span></code> qui crée un emplacement dans le document. On remarque que cette balise n’a pas de contenu.</p></li>
+<li><p>La balise a un identifiant <code class="docutils literal notranslate"><span class="pre">datetime</span></code> qui est utilisé par la script javascript.</p></li>
+<li><p>Le script javascript crée la date et l’heure en l’actualisant toutes les secondes.</p></li>
+</ol>
+</div>
+<div class="demo"><!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afficher la Date et l'Heure</title>
+    <style>
+        #datetime{
+            text-align:center;
+            font-size: 2em;
+        }
+    </style>
+    <script>
+        function updateDateTime() {
+            var now = new Date();
+            var optionsDate = { year: 'numeric', month: 'long', day: 'numeric' };
+            var optionsTime = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+            var dateStr = now.toLocaleDateString('fr-FR', optionsDate);
+            var timeStr = now.toLocaleTimeString('fr-FR', optionsTime);
+            document.getElementById('datetime').innerText = dateStr + ' ' + timeStr;
+        }
+
+        // Mettre à jour l'heure chaque seconde
+        setInterval(updateDateTime, 1000);
+
+        // Appeler immédiatement la fonction pour afficher la date et l'heure sans attendre 1 seconde
+        updateDateTime();
+    </script>
+</head>
+<body>
+    <h2>La date et l'heure du jour</h2>
+    <div id="datetime"></div>
+</body>
+</html></div></section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="exercice_2.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Exercices</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="exercice_3.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Exercices</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-au-javascript">Introduction au JAVASCRIPT</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-des-evenements-en-javascript">Gestion des événements en JAVASCRIPT</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agir-sur-le-contenu-du-document">Agir sur le contenu du document</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Yannick Chistel
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023,Yannick Chistel.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

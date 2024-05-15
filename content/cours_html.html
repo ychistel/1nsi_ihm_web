@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Le langage html &#8212; NSI</title>
+    <title>Le langage html &#8212; &lt;a href=&#34;https://ychistel.github.io/cours/&#34;&gt;NSI&lt;/a&gt;</title>
   
   
   
@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=a6621bbe" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=fa2fe99f" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
@@ -43,10 +43,10 @@
     <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script src="../_static/translations.js?v=bf059b8c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/activite_web_html';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/cours_html';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Feuille de style CSS" href="activite_web_css.html" />
+    <link rel="next" title="Exercices" href="exercice_1.html" />
     <link rel="prev" title="Langage HTML, CSS et JAVASCRIPT" href="../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="fr"/>
@@ -132,7 +132,7 @@
   
   
   
-    <p class="title logo__title">NSI</p>
+    <p class="title logo__title"><a href="https://ychistel.github.io/cours/">NSI</a></p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -148,10 +148,20 @@
  </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        <ul class="current nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Langage HTML</span></p>
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Le langage html</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activite_web_css.html">Feuille de style CSS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activite_web_js.html">Les événements en JAVASCRIPT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercice_1.html">Exercices</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Feuille de style</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="cours_css.html">Les styles en CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercice_2.html">Exercices</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interactivité</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="cours_js.html">Les événements en JAVASCRIPT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercice_3.html">Exercices</a></li>
 </ul>
 
     </div>
@@ -206,7 +216,7 @@
       
       
       
-      <li><a href="../_sources/content/activite_web_html.rst" target="_blank"
+      <li><a href="../_sources/content/cours_html.rst" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Télécharger le fichier source"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -313,11 +323,29 @@ langage utilisé. Ce langage est le <code class="docutils literal notranslate"><
 <p><span class="caption-text">Page en langage html</span><a class="headerlink" href="#id1" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
-<ol class="arabic">
-<li><p>Une page web est structurée selon les éléments qu’elle contient. Identifier sur l’image ci-dessus 5 éléments structurel contenu dans la page web.</p></li>
-<li><p>Un texte peut également contenir des mises en forme permettant de mettre en évidence des mots du texte. Citer différents mises en forme applicable à des mots d’un texte.</p></li>
-<li><p>Une page web est écrite en langage <strong>html</strong>. Ce langage utilise des <strong>balises</strong> pour structurer les contenus d’un texte. Le tableau ci-après donne les principales balises du langage html pour structurer un texte.</p>
-<table class="table">
+<p>Le contenu d’une page web est structuré par les éléments qu’elle contient. Sur la figure ci-dessus, la page contient:</p>
+<ul class="simple">
+<li><p>un titre « Fonctionnement du web »,</p></li>
+<li><p>des sous-titres « Introduction », « Langages du WEB », etc,</p></li>
+<li><p>des paragraphes placés après chaque sous-titres</p></li>
+<li><p>des images,</p></li>
+<li><p>une liste numérotée et une liste à puces.</p></li>
+</ul>
+<p>Le contenu d’une page web peut également contenir des mises en forme permettant de mettre en évidence des mots du texte avec:</p>
+<ul class="simple">
+<li><p>des mots en caractères <strong>gras</strong>,</p></li>
+<li><p>des mots en caractères <em>italiques</em>,</p></li>
+<li><p>des liens hypertextes pour accéder à d’autres contenus web,</p></li>
+<li><p>une police et une taille de police différente.</p></li>
+</ul>
+<p>On obtient cette structure et cette mise en forme avec des <code class="docutils literal notranslate"><span class="pre">balises</span></code>. Il existe 2 types de balises:</p>
+<ul class="simple">
+<li><p>les balises ouvrantes et fermantes qui se placent avant et après le contenu: <code class="docutils literal notranslate"><span class="pre">&lt;balise&gt;le</span> <span class="pre">contenu&lt;/balise&gt;</span></code></p></li>
+<li><p>les balises dites vides qui ne contiennent pas de contenu: <code class="docutils literal notranslate"><span class="pre">&lt;balise</span> <span class="pre">/&gt;</span></code>.</p></li>
+</ul>
+<p>Les balises peuvent contenir des attributs. Un attribut est une propriété qui permet d’agir sur le contenu. La syntaxe est la suivante: <code class="docutils literal notranslate"><span class="pre">&lt;balise</span> <span class="pre">attribut=&quot;valeur&quot;&gt;contenu&lt;/balise&gt;</span></code> ou <code class="docutils literal notranslate"><span class="pre">&lt;balise</span> <span class="pre">attribut=&quot;valeur&quot;</span> <span class="pre">/&gt;</span></code>.</p>
+<p>Le tableau ci-après donne les principales balises du langage <code class="docutils literal notranslate"><span class="pre">html</span></code> pour structurer et mettre en forme un texte.</p>
+<table class="bordure border-style-solid border-width-1 table">
 <colgroup>
 <col style="width: 22.2%" />
 <col style="width: 33.3%" />
@@ -392,47 +420,6 @@ langage utilisé. Ce langage est le <code class="docutils literal notranslate"><
 </tr>
 </tbody>
 </table>
-<p>Identifier les balises html aux différents éléments structurels et de mise en forme d’un texte.</p>
-</li>
-<li><p>Le contenu de la page web est dans un fichier texte, disponible sur l’ENT et visible sur la figure suivante.</p>
-<img alt="image" src="../_images/langage_html_txt.png" />
-<ol class="loweralpha simple">
-<li><p>Ouvrir ce fichier avec l’éditeur notepad++ et ajouter les balises html pour structurer le contenu.</p></li>
-<li><p>Sauvegarder votre fichier avec une extension <code class="docutils literal notranslate"><span class="pre">html</span></code> et l’ouvrir avec un navigateur.</p></li>
-</ol>
-</li>
-<li><p>Afficher votre page html et activer les outils de développement (F12) et sélectionner l’onglet <strong>inspecteur</strong> (vous pouvez aussi faire un clic droit de souris et sélectionner « inspecter »).</p>
-<p>Vérifier la présence des balises que vous avez ajouter à votre fichier.</p>
-</li>
-<li><p>Ajouter les liens hypertextes suivants:</p>
-<ol class="loweralpha simple">
-<li><p>Un lien vers la page <a class="reference external" href="https://fr.wikipedia.org/wiki/World_Wide_Web">wikipedia du mot WEB</a> dans le paragraphe introduction.</p></li>
-<li><p>Un lien vers la page <a class="reference external" href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language">wikipedia du mot HTML</a> dans le paragraphe langage HTML.</p></li>
-</ol>
-</li>
-<li><p>L’affichage des balises <code class="docutils literal notranslate"><span class="pre">&lt;balise&gt;</span></code> et <code class="docutils literal notranslate"><span class="pre">&lt;/balise&gt;</span></code> n’est pas correct. Cela s’explique par le fait que le navigateur essaie d’interpréter ces balises comme de vraies balises html sans y parvenir. Pour afficher des caractères spéciaux, appelés <strong>entités html</strong>, il faut utiliser un encodage propre au html.</p>
-<p>Le site de <a class="reference external" href="https://developer.mozilla.org/fr/docs/Glossary/Entity">mozilla</a> vous guide pour afficher correctement les balises html dans votre document.</p>
-</li>
-<li><p>Une page web se décompose en 2 parties:</p>
-<ul class="simple">
-<li><p>Une partie non affichée qui contient des informations sur la page web utiles au navigateur pour afficher correctement la page. Cette partie est l’entête du document html balisée par <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;...&lt;/head&gt;</span></code></p></li>
-<li><p>Une partie affichée par le navigateur qui contient le contenu du document. C’est le coprs du document html balisé par <code class="docutils literal notranslate"><span class="pre">&lt;body&gt;...&lt;/body&gt;</span></code>.</p></li>
-</ul>
-<ol class="loweralpha simple">
-<li><p>Ajouter dans votre fichier html les balises de l’entête et du corps du document.</p></li>
-<li><p>Quel est le titre de l’onglet de votre document html affiché par le navigateur ?</p></li>
-<li><p>Pour afficher un titre sur l’onglet, on ajoute la balise <code class="docutils literal notranslate"><span class="pre">&lt;title&gt;...&lt;/title&gt;</span></code>. Ajouter le titre <em>Première page web</em> pour qu’il apparaisse sur l’onglet.</p></li>
-</ol>
-<p>d. Les balises <code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">/&gt;</span></code> sont des balises vides qui informent le navigateur sur le document à afficher. Elle est accompagnée d’un attribut qui contient les informations à transmettre au navigateur.
-Par exemple l’attribut <code class="docutils literal notranslate"><span class="pre">charset</span></code> indique l’encodage de caractères à utiliser.</p>
-<blockquote>
-<div><p>Ajouter à votre fichier une balise <code class="docutils literal notranslate"><span class="pre">meta</span></code> indiquant l’encodage <code class="docutils literal notranslate"><span class="pre">utf-8</span></code> utilisé.</p>
-</div></blockquote>
-<ol class="loweralpha simple" start="4">
-<li><p>Modifier l’encodage par <code class="docutils literal notranslate"><span class="pre">iso-8859-1</span></code> et actualiser votre page web. La page web s’affiche-t-elle correctement ?</p></li>
-</ol>
-</li>
-</ol>
 </section>
 
 
@@ -456,11 +443,11 @@ Par exemple l’attribut <code class="docutils literal notranslate"><span class=
       </div>
     </a>
     <a class="right-next"
-       href="activite_web_css.html"
+       href="exercice_1.html"
        title="page suivante">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">suivant</p>
-        <p class="prev-next-title">Feuille de style CSS</p>
+        <p class="prev-next-title">Exercices</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
