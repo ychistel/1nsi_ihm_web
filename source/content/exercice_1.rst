@@ -51,6 +51,17 @@ Exercices
 
     La balise ``<ol>liste numérotée</ol>`` crée une liste numérotée et la balise ``<ul>liste à puces</ul>`` crée une liste à puces. Chaque item de liste est entouré par les balises ``<li>item</li>``.
 
+    On obtient une structure de code:
+
+    .. code:: html
+        :caption: Liste numérotée
+
+        <ul>
+            <li>premier item</li>
+            <li>deuxième item</li>
+            <li>Wtroisième item</li>
+        </ul>
+
     #.  Créer la liste numérotée dans le paragraphe "Langage du web" avec les trois items associés au trois langages utilisés dans le web.
     #.  Créer la liste à puces dans le dernier paragraphe sur les types de balises html.
 
@@ -83,13 +94,15 @@ Exercices
     #.  Un navigateur ouvre un onglet pour chaque page web. 
         
         a.  Quel est le titre de l'onglet de votre document html affiché par le navigateur ?
-        b.  Pour afficher un titre sur l'onglet, on utilise la balise ``<title>...</title>``. Ajouter le titre *Première page web* pour qu'il apparaisse sur l'onglet.
-    #.  Les balises ``<meta />`` sont des balises vides qui informent le navigateur sur le document à afficher. Elle est accompagnée d'un attribut qui contient les informations à transmettre au navigateur.
+        b.  Pour afficher un titre sur l'onglet, on utilise la balise ``<title>...</title>`` placées entre les balises ``<head>`` et ``</head>``. 
+        
+            Ajouter le titre *Première page web* pour qu'il apparaisse sur l'onglet.
+    #.  Les balises ``<meta />`` sont des balises vides qui informent le navigateur sur le document à afficher. Elle est accompagnée d'un attribut qui contient les informations à transmettre au navigateur et sont placées entre les balises ``<head>`` et ``</head>``. 
     
-        Par exemple l'attribut ``charset`` indique l'encodage de caractères que doit utiliser le navigateur. 
+        L'encodage de caractères du document est indiqué au navigateur par une balise ``<meta />`` avec l'attribut d'encodage. Par exemple l'attribut ``charset`` indique l'encodage de caractères que doit utiliser le navigateur. 
     
         a.  Ajouter à votre fichier une balise ``meta`` indiquant l'encodage ``utf-8`` utilisé.
-        b. Modifier l'encodage par ``iso-8859-1`` et actualiser votre page web. La page web s'affiche-t-elle correctement ?
+        b.  Modifier l'encodage par ``iso-8859-1`` et actualiser votre page web. La page web s'affiche-t-elle correctement ?
 
 .. exercice::
 
