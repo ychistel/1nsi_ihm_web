@@ -370,6 +370,17 @@ document.write(`
 <p><em>On poursuit avec la page web commencée dans l’exercice précédent.</em></p>
 <p>Il existe deux types de listes : les listes numérotées et les listes à puces. Les contenus d’une liste sont appelés des <strong>items</strong>. Il y a donc autant d’items que de numéros ou de puces qui sont toujours placés avant.</p>
 <p>La balise <code class="docutils literal notranslate"><span class="pre">&lt;ol&gt;liste</span> <span class="pre">numérotée&lt;/ol&gt;</span></code> crée une liste numérotée et la balise <code class="docutils literal notranslate"><span class="pre">&lt;ul&gt;liste</span> <span class="pre">à</span> <span class="pre">puces&lt;/ul&gt;</span></code> crée une liste à puces. Chaque item de liste est entouré par les balises <code class="docutils literal notranslate"><span class="pre">&lt;li&gt;item&lt;/li&gt;</span></code>.</p>
+<p>On obtient une structure de code:</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Liste numérotée</span><a class="headerlink" href="#id1" title="Lien vers ce code">#</a></div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>premier item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>deuxième item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Wtroisième item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
 <ol class="arabic simple">
 <li><p>Créer la liste numérotée dans le paragraphe « Langage du web » avec les trois items associés au trois langages utilisés dans le web.</p></li>
 <li><p>Créer la liste à puces dans le dernier paragraphe sur les types de balises html.</p></li>
@@ -399,13 +410,15 @@ document.write(`
 <ol class="arabic">
 <li><p>Structurer votre document web avec les balises html, d’entête et de corps. Vérifier que celle-ci s’affiche toujours correctement dans le navigateur.</p></li>
 <li><p>Un navigateur ouvre un onglet pour chaque page web.</p>
-<ol class="loweralpha simple">
+<ol class="loweralpha">
 <li><p>Quel est le titre de l’onglet de votre document html affiché par le navigateur ?</p></li>
-<li><p>Pour afficher un titre sur l’onglet, on utilise la balise <code class="docutils literal notranslate"><span class="pre">&lt;title&gt;...&lt;/title&gt;</span></code>. Ajouter le titre <em>Première page web</em> pour qu’il apparaisse sur l’onglet.</p></li>
+<li><p>Pour afficher un titre sur l’onglet, on utilise la balise <code class="docutils literal notranslate"><span class="pre">&lt;title&gt;...&lt;/title&gt;</span></code> placées entre les balises <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code> et <code class="docutils literal notranslate"><span class="pre">&lt;/head&gt;</span></code>.</p>
+<p>Ajouter le titre <em>Première page web</em> pour qu’il apparaisse sur l’onglet.</p>
+</li>
 </ol>
 </li>
-<li><p>Les balises <code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">/&gt;</span></code> sont des balises vides qui informent le navigateur sur le document à afficher. Elle est accompagnée d’un attribut qui contient les informations à transmettre au navigateur.</p>
-<p>Par exemple l’attribut <code class="docutils literal notranslate"><span class="pre">charset</span></code> indique l’encodage de caractères que doit utiliser le navigateur.</p>
+<li><p>Les balises <code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">/&gt;</span></code> sont des balises vides qui informent le navigateur sur le document à afficher. Elle est accompagnée d’un attribut qui contient les informations à transmettre au navigateur et sont placées entre les balises <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code> et <code class="docutils literal notranslate"><span class="pre">&lt;/head&gt;</span></code>.</p>
+<p>L’encodage de caractères du document est indiqué au navigateur par une balise <code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">/&gt;</span></code> avec l’attribut d’encodage. Par exemple l’attribut <code class="docutils literal notranslate"><span class="pre">charset</span></code> indique l’encodage de caractères que doit utiliser le navigateur.</p>
 <ol class="loweralpha simple">
 <li><p>Ajouter à votre fichier une balise <code class="docutils literal notranslate"><span class="pre">meta</span></code> indiquant l’encodage <code class="docutils literal notranslate"><span class="pre">utf-8</span></code> utilisé.</p></li>
 <li><p>Modifier l’encodage par <code class="docutils literal notranslate"><span class="pre">iso-8859-1</span></code> et actualiser votre page web. La page web s’affiche-t-elle correctement ?</p></li>
