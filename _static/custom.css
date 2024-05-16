@@ -74,5 +74,6 @@ p.title a{
 
 .demo{
     margin:0 25px;
+    padding:8px;
     border:solid 1px #eee;
 }
