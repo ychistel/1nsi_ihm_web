@@ -103,7 +103,7 @@ Exercices
     
         a.  Ajouter à votre fichier une balise ``meta`` indiquant l'encodage ``utf-8`` utilisé.
 
-            ..code:: html
+            .. code:: html
 
                 <meta charset='utf8' />
 
