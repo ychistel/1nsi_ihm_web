@@ -3,6 +3,7 @@ Exercices
 
 .. _wikipedia du mot WEB: https://fr.wikipedia.org/wiki/World_Wide_Web
 .. _wikipedia du mot HTML: https://fr.wikipedia.org/wiki/Hypertext_Markup_Language
+.. _mozilla: https://developer.mozilla.org/fr/docs/Glossary/Entity
 
 .. exercice::
 
