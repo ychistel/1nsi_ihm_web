@@ -102,6 +102,7 @@ Reprenons notre exemple de premier paragraphe affiché en gras et encadré. On c
 ce qui donne le résultat suivant:
 
 .. raw:: html
+    :class: demo
 
     <!doctype>
     <html>
