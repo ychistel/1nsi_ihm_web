@@ -102,6 +102,11 @@ Exercices
         L'encodage de caractères du document est indiqué au navigateur par une balise ``<meta />`` avec l'attribut d'encodage. Par exemple l'attribut ``charset`` indique l'encodage de caractères que doit utiliser le navigateur. 
     
         a.  Ajouter à votre fichier une balise ``meta`` indiquant l'encodage ``utf-8`` utilisé.
+
+            ..code:: html
+
+                <meta charset='utf8' />
+
         b.  Modifier l'encodage par ``iso-8859-1`` et actualiser votre page web. La page web s'affiche-t-elle correctement ?
 
 .. exercice::

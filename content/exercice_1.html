@@ -419,8 +419,13 @@ document.write(`
 </li>
 <li><p>Les balises <code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">/&gt;</span></code> sont des balises vides qui informent le navigateur sur le document à afficher. Elle est accompagnée d’un attribut qui contient les informations à transmettre au navigateur et sont placées entre les balises <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code> et <code class="docutils literal notranslate"><span class="pre">&lt;/head&gt;</span></code>.</p>
 <p>L’encodage de caractères du document est indiqué au navigateur par une balise <code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">/&gt;</span></code> avec l’attribut d’encodage. Par exemple l’attribut <code class="docutils literal notranslate"><span class="pre">charset</span></code> indique l’encodage de caractères que doit utiliser le navigateur.</p>
-<ol class="loweralpha simple">
-<li><p>Ajouter à votre fichier une balise <code class="docutils literal notranslate"><span class="pre">meta</span></code> indiquant l’encodage <code class="docutils literal notranslate"><span class="pre">utf-8</span></code> utilisé.</p></li>
+<ol class="loweralpha">
+<li><p>Ajouter à votre fichier une balise <code class="docutils literal notranslate"><span class="pre">meta</span></code> indiquant l’encodage <code class="docutils literal notranslate"><span class="pre">utf-8</span></code> utilisé.</p>
+<p>..code:: html</p>
+<blockquote>
+<div><p>&lt;meta charset=”utf8” /&gt;</p>
+</div></blockquote>
+</li>
 <li><p>Modifier l’encodage par <code class="docutils literal notranslate"><span class="pre">iso-8859-1</span></code> et actualiser votre page web. La page web s’affiche-t-elle correctement ?</p></li>
 </ol>
 </li>
