@@ -329,12 +329,12 @@ document.write(`
 <h2>Exercice 9<a class="headerlink" href="#section-9" title="Lien vers cette rubrique">#</a></h2>
 <p><em>On reprend le document web créé dans les 2 parties précédentes</em></p>
 <ol class="arabic">
-<li><p>Ajouter les deux balises pour créer un script <code class="docutils literal notranslate"><span class="pre">JAVASCRIPT</span></code> entre les  <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code> et <code class="docutils literal notranslate"><span class="pre">&lt;/head&gt;</span></code> de votre document HTML.</p></li>
+<li><p>Ajouter la balise pour créer un script <code class="docutils literal notranslate"><span class="pre">JAVASCRIPT</span></code> entre les  <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code> et <code class="docutils literal notranslate"><span class="pre">&lt;/head&gt;</span></code> de votre document HTML.</p></li>
 <li><p>On donne un premier script JAVASCRIPT:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;mon premier script&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>Placer ce script entre les balises « javascript » de votre document puis actualiser la page web.</p>
+<p>Placer ce script entre les balises <code class="docutils literal notranslate"><span class="pre">javascript</span></code> de votre document puis actualiser la page web.</p>
 </li>
 <li><p>On propose de compléter le script précédent avec l’instruction:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;mon premier script&#39;</span><span class="p">);</span>
@@ -362,7 +362,7 @@ document.write(`
 <ol class="loweralpha" start="3">
 <li><p>Compléter le script avec une troisième ligne de code pour afficher le nom en console.</p></li>
 <li><p>On peut améliorer l’affichage en concaténant la variable <code class="docutils literal notranslate"><span class="pre">nom</span></code> et un texte grâce au signe d’addition.</p>
-<p>Ajouter le texte <a href="#id1"><span class="problematic" id="id2">``</span></a>Votre nom est `` pour obtenir l’affichage d’alerte ci-dessous.</p>
+<p>Ajouter le texte <code class="docutils literal notranslate"><span class="pre">Votre</span> <span class="pre">nom</span> <span class="pre">est</span></code> pour obtenir l’affichage d’alerte ci-dessous.</p>
 <figure class="align-center">
 <a class="border-style-solid border-width-1 border-color-gray reference internal image-reference" href="../_images/alert_nom.png"><img alt="image" class="border-style-solid border-width-1 border-color-gray" src="../_images/alert_nom.png" style="width: 400px;" />
 </a>
@@ -376,13 +376,13 @@ document.write(`
 <h2>Exercice 10<a class="headerlink" href="#section-10" title="Lien vers cette rubrique">#</a></h2>
 <p><em>On reprend le document web créé dans les 2 parties précédentes</em></p>
 <ol class="arabic">
-<li><p>On peut utiliser des scripts javascript placés dans un fichier externe. Dans ce cas, on ajoute dans la balise <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;...&lt;/head&gt;</span></code> la balise suivante.</p>
+<li><p>On peut utiliser des scripts javascript placés dans un fichier externe. Dans ce cas, on ajoute dans la balise <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;...&lt;/head&gt;</span></code> la balise suivante :</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;script.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
 </pre></div>
 </div>
 </li>
 <li><p>Télécharger sur l’ENT le fichier <code class="docutils literal notranslate"><span class="pre">script.js</span></code> dans le même dossier que votre fichier html. Ce fichier contient de petites fonctions en javascript pour agir sur le document HTML.</p></li>
-<li><p>L’événement <code class="docutils literal notranslate"><span class="pre">onclick</span></code> écoute le clic de souris dans le document WEB. Celui-ci est limité à une zone du document.</p>
+<li><p>L’événement <code class="docutils literal notranslate"><span class="pre">onClick</span></code> écoute le clic de souris dans le document WEB. Celui-ci est limité à une zone du document.</p>
 <ol class="loweralpha">
 <li><p>Remplacer la balise <code class="docutils literal notranslate"><span class="pre">&lt;body&gt;</span></code> par la balise suivante:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nx">body</span><span class="w"> </span><span class="nx">onclick</span><span class="o">=</span><span class="s2">&quot;colorer()&quot;</span><span class="o">&gt;</span>
@@ -396,12 +396,12 @@ document.write(`
 <ol class="loweralpha">
 <li><p>Ajouter l’identifiant <code class="docutils literal notranslate"><span class="pre">logo</span></code> dans la balise <code class="docutils literal notranslate"><span class="pre">&lt;img&gt;</span></code> contenant le logo HTML de votre document.</p></li>
 <li><p>L’événement <code class="docutils literal notranslate"><span class="pre">onmouseover</span></code> écoute le survol d’un élément HTML du document pour exécuter la fonction associée.</p>
-<p>Ajouter dans la balise <code class="docutils literal notranslate"><span class="pre">&lt;img&gt;</span></code> de l’image qui a l’identifiant logo l’instruction <code class="docutils literal notranslate"><span class="pre">onmouseover=&quot;encadrer()&quot;</span></code>.</p>
+<p>Ajouter dans la balise <code class="docutils literal notranslate"><span class="pre">&lt;img&gt;</span></code> de l’image avec l’identifiant <code class="docutils literal notranslate"><span class="pre">logo</span></code> l’instruction <code class="docutils literal notranslate"><span class="pre">onmouseover=&quot;encadrer()&quot;</span></code>.</p>
 </li>
 <li><p>Vérifier dans votre document web que le survol du logo ajoute un cadre à l’image.</p></li>
 </ol>
 </li>
-<li><p>En HTML, on peut ajouter des boutons qui permettent de créer de l’interactivité. Pour ajouter un bouton, il faut appliquer la syntaxe suivante:</p>
+<li><p>En HTML, on peut ajouter des boutons qui permettent de créer de l’interactivité. Pour ajouter un bouton, il faut appliquer la syntaxe suivante :</p>
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span>Texte sur le bouton<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 </pre></div>
 </div>
@@ -425,7 +425,7 @@ document.write(`
 <ol class="arabic">
 <li><p>Dans la page web, ajouter sous le bouton la balise <code class="docutils literal notranslate"><span class="pre">&lt;p</span> <span class="pre">id</span> <span class="pre">=&quot;message&quot;&gt;&lt;\p&gt;</span></code>. Actualiser la page web sur votre navigateur et vérifier que rien n’apparait puisque la balise est vide.</p></li>
 <li><p>En javascript, on peut accéder à une balise de la page html grâce à son identifiant. L’instruction est la suivante:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;identifiant de balise&#39;</span><span class="p">);</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;identifiant&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Ajouter dans la fonction <code class="docutils literal notranslate"><span class="pre">saisir_nom()</span></code> cette instruction pour accéder à la balise <code class="docutils literal notranslate"><span class="pre">&lt;p&gt;</span></code> d’identifiant <code class="docutils literal notranslate"><span class="pre">message</span></code>.</p>

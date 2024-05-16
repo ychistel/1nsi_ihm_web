@@ -5,7 +5,7 @@ Exercices
 
     *On reprend le document web créé dans les 2 parties précédentes*
 
-    #.  Ajouter les deux balises pour créer un script ``JAVASCRIPT`` entre les  ``<head>`` et ``</head>`` de votre document HTML.
+    #.  Ajouter la balise pour créer un script ``JAVASCRIPT`` entre les  ``<head>`` et ``</head>`` de votre document HTML.
 
     #.  On donne un premier script JAVASCRIPT:
 
@@ -13,7 +13,7 @@ Exercices
 
             alert('mon premier script');
 
-        Placer ce script entre les balises "javascript" de votre document puis actualiser la page web.
+        Placer ce script entre les balises ``javascript`` de votre document puis actualiser la page web.
 
     #.  On propose de compléter le script précédent avec l'instruction:
 
@@ -44,7 +44,7 @@ Exercices
         c.  Compléter le script avec une troisième ligne de code pour afficher le nom en console.
         d.  On peut améliorer l'affichage en concaténant la variable ``nom`` et un texte grâce au signe d'addition.
             
-            Ajouter le texte ``Votre nom est `` pour obtenir l'affichage d'alerte ci-dessous.
+            Ajouter le texte ``Votre nom est`` pour obtenir l'affichage d'alerte ci-dessous.
 
             .. figure:: ../img/alert_nom.png
                 :alt: image
@@ -56,7 +56,7 @@ Exercices
 
     *On reprend le document web créé dans les 2 parties précédentes*
 
-    #.  On peut utiliser des scripts javascript placés dans un fichier externe. Dans ce cas, on ajoute dans la balise ``<head>...</head>`` la balise suivante.
+    #.  On peut utiliser des scripts javascript placés dans un fichier externe. Dans ce cas, on ajoute dans la balise ``<head>...</head>`` la balise suivante :
 
         .. code-block:: javascript
 
@@ -64,7 +64,7 @@ Exercices
             
     #.  Télécharger sur l'ENT le fichier ``script.js`` dans le même dossier que votre fichier html. Ce fichier contient de petites fonctions en javascript pour agir sur le document HTML.
 
-    #.  L'événement ``onclick`` écoute le clic de souris dans le document WEB. Celui-ci est limité à une zone du document.
+    #.  L'événement ``onClick`` écoute le clic de souris dans le document WEB. Celui-ci est limité à une zone du document.
 
         a.  Remplacer la balise ``<body>`` par la balise suivante:
 
@@ -74,25 +74,25 @@ Exercices
 
         b.  Recharger la page puis tester votre événement en cliquant dans le corps de la page WEB. Vous pouvez supprimer cet événement après les tests.
         
-    #.  Il n'y a qu’une seule balise ``<body>`` ! Mais certaines balises sont multiples comme les titres, les paragraphes ou les images. On peut identifier les balises d'un document html par un identifiant. Un identifiant est un mot unique du document HTML qui se note dans la balise par ``id="identifiant"``.
+    #.  Il n'y a qu'une seule balise ``<body>`` ! Mais certaines balises sont multiples comme les titres, les paragraphes ou les images. On peut identifier les balises d'un document html par un identifiant. Un identifiant est un mot unique du document HTML qui se note dans la balise par ``id="identifiant"``.
 
-        a.  Ajouter l’identifiant ``logo`` dans la balise ``<img>`` contenant le logo HTML de votre document.
-        b.  L'événement ``onmouseover`` écoute le survol d’un élément HTML du document pour exécuter la fonction associée.
+        a.  Ajouter l'identifiant ``logo`` dans la balise ``<img>`` contenant le logo HTML de votre document.
+        b.  L'événement ``onmouseover`` écoute le survol d'un élément HTML du document pour exécuter la fonction associée.
 
-            Ajouter dans la balise ``<img>`` de l’image qui a l’identifiant logo l'instruction ``onmouseover="encadrer()"``.
+            Ajouter dans la balise ``<img>`` de l'image avec l'identifiant ``logo`` l'instruction ``onmouseover="encadrer()"``.
 
         c.  Vérifier dans votre document web que le survol du logo ajoute un cadre à l'image.
 
-    #.  En HTML, on peut ajouter des boutons qui permettent de créer de l’interactivité. Pour ajouter un bouton, il faut appliquer la syntaxe suivante:
+    #.  En HTML, on peut ajouter des boutons qui permettent de créer de l'interactivité. Pour ajouter un bouton, il faut appliquer la syntaxe suivante :
 
         .. code-block:: html
 
             <button>Texte sur le bouton</button>
 
         a.  Ajouter dans votre document HTML un bouton avec l'identifiant ``btn`` et contenant le texte "Cliquer".
-        b.  Ajouter l’événement ``onClick`` sur le bouton en associant une instruction d’alerte qui affiche le message "Tu as cliqué sur le bouton !".
+        b.  Ajouter l'événement ``onClick`` sur le bouton en associant une instruction d'alerte qui affiche le message "Tu as cliqué sur le bouton !".
 
-    #.  Ouvrir avec l’éditeur notepad++ le fichier ``script.js``. Ce fichier contient des fonctions écrites en javascript qui vont nous servir de modèle.
+    #.  Ouvrir avec l'éditeur notepad++ le fichier ``script.js``. Ce fichier contient des fonctions écrites en javascript qui vont nous servir de modèle.
 
         a.  Compléter la fonction ``alerter`` pour afficher le message "Tu as cliqué sur le bouton !" puis associer cette fonction au bouton ``btn``.
 
@@ -109,7 +109,7 @@ Exercices
 
         .. code-block:: javascript
 
-            msg = document.getElementById('identifiant de balise');
+            msg = document.getElementById('identifiant');
 
         Ajouter dans la fonction ``saisir_nom()`` cette instruction pour accéder à la balise ``<p>`` d'identifiant ``message``.
 
