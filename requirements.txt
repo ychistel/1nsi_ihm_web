@@ -17,5 +17,8 @@ jupyter
 # Module pour insérer des notebook jupyter
 nbsphinx
 
+# Module pour insérer un bouton de copier coller
+sphinx-copybutton
+
 # Module pour convertir des fichiers d'un format à un autre
 pandoc
