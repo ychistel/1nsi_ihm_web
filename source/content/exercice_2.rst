@@ -1,3 +1,5 @@
+.. _font google: https://fonts.google.com/?preview.layout=grid
+
 Exercices
 ==========
 
@@ -5,7 +7,7 @@ Exercices
 
     L'image ci-dessous est notre premier document web écrit en langage html. Nous n'avons pas encore obtenu le résultat final attendu.
 
-    .. figure:: ../img/style_css.png
+    .. figure:: ../img/activite_css.png
         :alt: image
         :align: center
         :width: 100%
@@ -31,7 +33,7 @@ Exercices
 
         Ajouter le sélecteur associé au titre de niveau 1, puis la propriété ``text-align`` qui a pour valeur ``center`` et la propriété ``font-size`` qui a pour valeur ``3em``.
 
-    #.  Les titres de niveau 2 ont une couleur bleue. La propriété CSS qui définit la couleur est ``color``. Les valeurs pour les couleurs peuvent avoir plusieurs écritures.
+    #.  Les titres de niveau 2 ont une couleur bleue. La propriété CSS qui définit la couleur est ``color``. Les valeurs pour les couleurs peuvent avoir plusieurs écritures :
 
         -   le nom de la couleur en anglais : ``cyan``
         -   le code couleur RGB en hexadécimal précédé du signe # : ``#00ffff``
@@ -53,7 +55,7 @@ Exercices
 
     *on reprend le document de l'exercice précédent*.
 
-    La photo de toile d’araignée est encadrée avec un effet ombré. Pour obtenir cet effet, on applique la règle CSS suivante:
+    La photo de la toile d'araignée est encadrée avec un effet ombré. Pour obtenir cet effet, on applique la règle CSS suivante:
 
     .. code:: css
 
