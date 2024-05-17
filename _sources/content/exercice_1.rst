@@ -108,7 +108,7 @@ Exercices
 
             <meta charset='...' />
     
-        a.  Quel est l'encodage de caractères utilisés par les documents sur le web ?
+        a.  Quel est l'encodage de caractères utilisé par les documents sur le web ?
         b.  Ajouter à votre fichier une balise ``meta`` indiquant l'encodage ``utf-8`` utilisé.
         c.  Modifier l'encodage par ``iso-8859-1`` et actualiser votre page web. La page web s'affiche-t-elle correctement ?
 
