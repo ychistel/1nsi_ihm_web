@@ -9,7 +9,7 @@ Exercices
 
     On souhaite réaliser la page web suivante:
 
-    .. figure:: ../img/langage_html.png
+    .. figure:: ../img/activite_sans_css.png
         :alt: image
         :align: center
         :width: 100%
@@ -90,32 +90,54 @@ Exercices
     
     *On poursuit avec le document web créé dans les exercices précédents.*
 
-    #.  Structurer votre document web avec les balises html, d'entête et de corps. Vérifier que celle-ci s'affiche toujours correctement dans le navigateur.
+    #.  Restructurer votre document web en insérant tout le contenu de votre page entre les balises ``<body>`` et ``</body>`` puis vérifier que votre page web s'affiche bien.
     #.  Un navigateur ouvre un onglet pour chaque page web. 
         
         a.  Quel est le titre de l'onglet de votre document html affiché par le navigateur ?
         b.  Pour afficher un titre sur l'onglet, on utilise la balise ``<title>...</title>`` placées entre les balises ``<head>`` et ``</head>``. 
         
             Ajouter le titre *Première page web* pour qu'il apparaisse sur l'onglet.
-    #.  Les balises ``<meta />`` sont des balises vides qui informent le navigateur sur le document à afficher. Elle est accompagnée d'un attribut qui contient les informations à transmettre au navigateur et sont placées entre les balises ``<head>`` et ``</head>``. 
+
+    #.  On appelle **metadonnée** toute information contenue dans le document ``HTML`` qui ne sera pas directement visible sur la page affichée par le navigateur. Ces métadonnées sont placées dans des balises vides ``<meta />`` et leurs valeurs sont associées à des attributs.
     
-        L'encodage de caractères du document est indiqué au navigateur par une balise ``<meta />`` avec l'attribut d'encodage. Par exemple l'attribut ``charset`` indique l'encodage de caractères que doit utiliser le navigateur. 
+        Une balise ``<meta />`` est  placée entre les balises ``<head>`` et ``</head>``. Il peut y avoir plusieurs balises ``<meta />`` dans un même document. Les 
+
+        Par exemple, l'encodage de caractères du document est une métadonnée utile au navigateur pour afficher correctement le document ``HTML``. C'est avec l'attribut ``charset`` que l'encodage de caractères sera transmis au navigateur. Le code ``HTML`` est :
+
+        .. code:: html
+
+            <meta charset='...' />
     
-        a.  Ajouter à votre fichier une balise ``meta`` indiquant l'encodage ``utf-8`` utilisé.
-
-            .. code:: html
-
-                <meta charset='utf8' />
-
-        b.  Modifier l'encodage par ``iso-8859-1`` et actualiser votre page web. La page web s'affiche-t-elle correctement ?
+        a.  Quel est l'encodage de caractères utilisés par les documents sur le web ?
+        b.  Ajouter à votre fichier une balise ``meta`` indiquant l'encodage ``utf-8`` utilisé.
+        c.  Modifier l'encodage par ``iso-8859-1`` et actualiser votre page web. La page web s'affiche-t-elle correctement ?
 
 .. exercice::
 
-    La partie cours sur "Le langage html" contient un tableau.
+    Réaliser un tableau en ``HTML`` se fait avec la structure suivante:
 
-    #.  En utilisant les outils de développement du navigateur, retouver la structure html et les balises utilisées pour créer un tableau.
-    #.  Créer une page web qui contient le tableau ci-dessous:
+    .. code:: html
+        :caption: Tableau HTML
 
-        .. figure:: ../img/tableau_pays.png
-            :align: center
+        <table>
+            <thead>
+                <tr><th>colonne 1</th><th>colonne 2</th>...</tr>
+            </thead>
+            <tbody>
+                <tr><td>...</th><th>...</th>...</tr>
+                <tr><td>...</th><th>...</th>...</tr>
+                ...
+            </tbody>
+        </table>
+
+    -   La balise ``<table>...</table>`` définit le tableau,
+    -   La balise ``<thead>...</thead>`` définit l'entête du tableau c'est à dire la première ligne,
+    -   La balise ``<tbody>...</tbody>`` définit le corps du tableau c'est à dire toutes les lignes sauf la première,
+    -   La balise ``<tr>...</tr>`` définit une ligne de tableau,
+    -   Les balises ``<th>...</th>`` et ``<td>...</td>`` définissent les colonnes du tableau.
+
+    Créer une page web qui contient le tableau ci-dessous:
+
+    .. figure:: ../img/tableau_pays.png
+        :align: center
 

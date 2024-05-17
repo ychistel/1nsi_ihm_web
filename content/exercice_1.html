@@ -334,7 +334,7 @@ document.write(`
 <h2>Exercice 1<a class="headerlink" href="#section-1" title="Lien vers cette rubrique">#</a></h2>
 <p>On souhaite réaliser la page web suivante:</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/langage_html.png"><img alt="image" src="../_images/langage_html.png" style="width: 100%;" />
+<a class="reference internal image-reference" href="../_images/activite_sans_css.png"><img alt="image" src="../_images/activite_sans_css.png" style="width: 100%;" />
 </a>
 </figure>
 <p>Le contenu de cette page web est dans un fichier texte disponible sur l’ENT.</p>
@@ -408,7 +408,7 @@ document.write(`
 </div>
 <p><em>On poursuit avec le document web créé dans les exercices précédents.</em></p>
 <ol class="arabic">
-<li><p>Structurer votre document web avec les balises html, d’entête et de corps. Vérifier que celle-ci s’affiche toujours correctement dans le navigateur.</p></li>
+<li><p>Restructurer votre document web en insérant tout le contenu de votre page entre les balises <code class="docutils literal notranslate"><span class="pre">&lt;body&gt;</span></code> et <code class="docutils literal notranslate"><span class="pre">&lt;/body&gt;</span></code> puis vérifier que votre page web s’affiche bien.</p></li>
 <li><p>Un navigateur ouvre un onglet pour chaque page web.</p>
 <ol class="loweralpha">
 <li><p>Quel est le titre de l’onglet de votre document html affiché par le navigateur ?</p></li>
@@ -417,14 +417,15 @@ document.write(`
 </li>
 </ol>
 </li>
-<li><p>Les balises <code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">/&gt;</span></code> sont des balises vides qui informent le navigateur sur le document à afficher. Elle est accompagnée d’un attribut qui contient les informations à transmettre au navigateur et sont placées entre les balises <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code> et <code class="docutils literal notranslate"><span class="pre">&lt;/head&gt;</span></code>.</p>
-<p>L’encodage de caractères du document est indiqué au navigateur par une balise <code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">/&gt;</span></code> avec l’attribut d’encodage. Par exemple l’attribut <code class="docutils literal notranslate"><span class="pre">charset</span></code> indique l’encodage de caractères que doit utiliser le navigateur.</p>
-<ol class="loweralpha">
-<li><p>Ajouter à votre fichier une balise <code class="docutils literal notranslate"><span class="pre">meta</span></code> indiquant l’encodage <code class="docutils literal notranslate"><span class="pre">utf-8</span></code> utilisé.</p>
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#39;utf8&#39;</span> <span class="p">/&gt;</span>
+<li><p>On appelle <strong>metadonnée</strong> toute information contenue dans le document <code class="docutils literal notranslate"><span class="pre">HTML</span></code> qui ne sera pas directement visible sur la page affichée par le navigateur. Ces métadonnées sont placées dans des balises vides <code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">/&gt;</span></code> et leurs valeurs sont associées à des attributs.</p>
+<p>Une balise <code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">/&gt;</span></code> est  placée entre les balises <code class="docutils literal notranslate"><span class="pre">&lt;head&gt;</span></code> et <code class="docutils literal notranslate"><span class="pre">&lt;/head&gt;</span></code>. Il peut y avoir plusieurs balises <code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">/&gt;</span></code> dans un même document. Les</p>
+<p>Par exemple, l’encodage de caractères du document est une métadonnée utile au navigateur pour afficher correctement le document <code class="docutils literal notranslate"><span class="pre">HTML</span></code>. C’est avec l’attribut <code class="docutils literal notranslate"><span class="pre">charset</span></code> que l’encodage de caractères sera transmis au navigateur. Le code <code class="docutils literal notranslate"><span class="pre">HTML</span></code> est :</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#39;...&#39;</span> <span class="p">/&gt;</span>
 </pre></div>
 </div>
-</li>
+<ol class="loweralpha simple">
+<li><p>Quel est l’encodage de caractères utilisés par les documents sur le web ?</p></li>
+<li><p>Ajouter à votre fichier une balise <code class="docutils literal notranslate"><span class="pre">meta</span></code> indiquant l’encodage <code class="docutils literal notranslate"><span class="pre">utf-8</span></code> utilisé.</p></li>
 <li><p>Modifier l’encodage par <code class="docutils literal notranslate"><span class="pre">iso-8859-1</span></code> et actualiser votre page web. La page web s’affiche-t-elle correctement ?</p></li>
 </ol>
 </li>
@@ -432,15 +433,33 @@ document.write(`
 </section>
 <section id="section-4">
 <h2>Exercice 4<a class="headerlink" href="#section-4" title="Lien vers cette rubrique">#</a></h2>
-<p>La partie cours sur « Le langage html » contient un tableau.</p>
-<ol class="arabic">
-<li><p>En utilisant les outils de développement du navigateur, retouver la structure html et les balises utilisées pour créer un tableau.</p></li>
-<li><p>Créer une page web qui contient le tableau ci-dessous:</p>
+<p>Réaliser un tableau en <code class="docutils literal notranslate"><span class="pre">HTML</span></code> se fait avec la structure suivante:</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Tableau HTML</span><a class="headerlink" href="#id2" title="Lien vers ce code">#</a></div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;&lt;</span><span class="nt">th</span><span class="p">&gt;</span>colonne 1<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;&lt;</span><span class="nt">th</span><span class="p">&gt;</span>colonne 2<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;&lt;</span><span class="nt">td</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;&lt;</span><span class="nt">th</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;&lt;</span><span class="nt">td</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;&lt;</span><span class="nt">th</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+        ...
+    <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p>La balise <code class="docutils literal notranslate"><span class="pre">&lt;table&gt;...&lt;/table&gt;</span></code> définit le tableau,</p></li>
+<li><p>La balise <code class="docutils literal notranslate"><span class="pre">&lt;thead&gt;...&lt;/thead&gt;</span></code> définit l’entête du tableau c’est à dire la première ligne,</p></li>
+<li><p>La balise <code class="docutils literal notranslate"><span class="pre">&lt;tbody&gt;...&lt;/tbody&gt;</span></code> définit le corps du tableau c’est à dire toutes les lignes sauf la première,</p></li>
+<li><p>La balise <code class="docutils literal notranslate"><span class="pre">&lt;tr&gt;...&lt;/tr&gt;</span></code> définit une ligne de tableau,</p></li>
+<li><p>Les balises <code class="docutils literal notranslate"><span class="pre">&lt;th&gt;...&lt;/th&gt;</span></code> et <code class="docutils literal notranslate"><span class="pre">&lt;td&gt;...&lt;/td&gt;</span></code> définissent les colonnes du tableau.</p></li>
+</ul>
+<p>Créer une page web qui contient le tableau ci-dessous:</p>
 <figure class="align-center">
 <img alt="../_images/tableau_pays.png" src="../_images/tableau_pays.png" />
 </figure>
-</li>
-</ol>
 </section>
 </section>
 

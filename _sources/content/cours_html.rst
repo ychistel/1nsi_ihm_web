@@ -8,7 +8,7 @@ Le langage html
 Le document ci-dessous est une image représentant une page Web. Son apparence ne laisse rien apparaître du
 langage utilisé. Ce langage est le ``HTML`` acronyme de ``HyperTexte Markup Language`` qui signifie "Langage de Balisage Hypertexte".
 
-.. figure:: ../img/langage_html.png
+.. figure:: ../img/activite_sans_css.png
    :alt: image
    :align: center
    :width: 100%
